@@ -1,0 +1,77 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(217, 19%, 24%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+.adviceId{
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: hsl(150, 100%, 66%);
+}
+.advice {
+    padding: 20px;
+    color: hsl(193, 38%, 86%);
+    font-size: 30px;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+}.button-dice {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: hsl(150, 100%, 66%);
+     position: relative; /* Needed to position the dots inside the circle */
+ }
+
+.smallDot {
+    width: 15%; /* Size of the dot */
+    height: 15%;
+    background-color: white;
+    border-radius: 50%; /* Makes the dots round */
+    position: absolute;
+}
+/*postion the dots*/
+.smallDot:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.smallDot:nth-child(2) {
+    top: 10%;
+    right: 10%;
+}
+
+.smallDot:nth-child(3) {
+    bottom: 10%;
+    left: 10%;
+}
+
+.smallDot:nth-child(4) {
+    bottom: 10%;
+    right: 10%;
+}
+
+/* Position the center dot */
+.smallDot:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the dot */
+}
+
